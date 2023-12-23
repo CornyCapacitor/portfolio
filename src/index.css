@@ -1,0 +1,15 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto+Mono&display=swap');
+
+  :root {
+    line-height: 1.5;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #242424;
+    font-family: Poppins, Roboto, Arial, Helvetica, sans-serif;
+
+    --primary: #12bca2;
+  }
+
+  body {
+    margin: 0;
+  }
