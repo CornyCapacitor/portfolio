@@ -6,6 +6,8 @@
     color: #ffffff;
     background-color: #191b35;
     font-family: Poppins, Roboto, Arial, Helvetica, sans-serif;
+    word-spacing: 2px;
+    letter-spacing: 1px;
 
     --primary: #23ceb4;
   }

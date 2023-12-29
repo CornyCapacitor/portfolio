@@ -23,14 +23,11 @@ h2 {
 
 .greet {
   word-spacing: 3px;
-  letter-spacing: 1px;
 }
 
 .description {
   display: flex;
   align-items: center;
-  word-spacing: 2px;
-  letter-spacing: 1px;
   opacity: 0.6;
   min-height: 105px;
 }
