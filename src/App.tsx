@@ -1,13 +1,14 @@
 import { Route, Routes } from 'react-router-dom'
-import { HomePage } from './pages/HomePage'
+import { Home } from './components/Home'
+import { Navbar } from './components/Navbar'
 
 import './App.css'
-
 function App() {
   return (
     <div className="app">
+      <Navbar />
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </div>
   )
