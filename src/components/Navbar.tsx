@@ -5,7 +5,7 @@ import './Navbar.css'
 export const Navbar = () => (
   <nav className="navbar">
     <div className="navbar-logo">
-      <img className="navbar-img" src="/public/hexagon.svg" />
+      <img className="navbar-img" src="/hexagon.svg" />
       <span className="navbar-img-letter highlighted">M</span>
     </div>
     <div className="app-navigation">
