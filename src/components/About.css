@@ -16,7 +16,7 @@
   box-sizing: inherit;
   flex-direction: row;
   width: 100%;
-  height: 250px;
+  min-height: 250px;
   font-size: 20px;
   gap: 100px;
 }
@@ -26,8 +26,9 @@
 }
 
 .section img {
+  align-self: center;
   width: 250px;
-  height: auto;
+  height: 250px;
 }
 
 .my-img {
