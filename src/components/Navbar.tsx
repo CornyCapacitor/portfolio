@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import './Navbar.css'
 
 export const Navbar = () => (
@@ -7,11 +9,11 @@ export const Navbar = () => (
       <span className="navbar-img-letter highlighted">M</span>
     </div>
     <div className="app-navigation">
-      <button className="navigation-button"><span className="highlighted">01.</span> About</button>
-      <button className="navigation-button"><span className="highlighted">02.</span> Experience</button>
-      <button className="navigation-button"><span className="highlighted">03.</span> Projects</button>
-      <button className="navigation-button"><span className="highlighted">04.</span> Contact</button>
-      <button className="resume-button">Resume</button>
+      <Link to="/about"><button className="navigation-button"><span className="highlighted">01.</span> About</button></Link>
+      <Link to="/experience"><button className="navigation-button"><span className="highlighted">02.</span> Experience</button></Link>
+      <Link to="/projects"><button className="navigation-button"><span className="highlighted">03.</span> Projects</button></Link>
+      <Link to="/contact"><button className="navigation-button"><span className="highlighted">04.</span> Contact</button></Link>
+      <Link to="/"><button className="resume-button">Resume</button></Link>
     </div>
   </nav>
 )

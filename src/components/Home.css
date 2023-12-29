@@ -1,0 +1,76 @@
+.home {
+  font-family: Poppins, Roboto, Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 100px 200px 100px 300px;
+  width: 100vw;
+  flex: 1;
+}
+
+h1 {
+  font-size: 70px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 70px;
+  margin: 0;
+  opacity: 0.6;
+}
+
+.greet {
+  word-spacing: 3px;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  opacity: 0.6;
+  min-height: 105px;
+}
+
+.highlighted {
+  font-weight: 500;
+  color: var(--primary)
+}
+
+.home-button {
+  margin-top: 30px;
+  padding: 20px 40px;
+  background-color: transparent;
+  border: solid 1px var(--primary);
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 16px;
+  transition: 0.2s;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 2px var(--primary);
+  }
+}
+
+.typewriter {
+  border-right: 7px var(--primary) solid;
+  padding-right: 5px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  margin: 25px 0px;
+  animation: typewriting step-end infinite 1s;
+}
+
+@keyframes typewriting {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: var(--primary);
+  }
+}
