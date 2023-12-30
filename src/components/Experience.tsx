@@ -1,23 +1,44 @@
 import { useState } from 'react';
+import { ExperienceList } from './ExperienceList';
+
 import './Experience.css';
+
+type Experience = {
+  name: string,
+  description: string,
+}
 
 export const Experience = () => {
   const [selectedPrimary, setSelectedPrimary] = useState<string | null>(null)
   const [selectedSecondary, setSelectedSecondary] = useState<string | null>(null)
+  const [experienceList] = useState<Experience[]>(ExperienceList)
+  const [primaryDescription, setPrimaryDescription] = useState<string>("");
+  const [secondaryDescription, setSecondaryDescription] = useState<string>("");
 
   const selectHandler = (value: string, type: string) => {
+    const selectedTech = experienceList.find((tech) => tech.name === value);
+
+    if (!selectedTech) {
+      return;
+    }
+
     if (type === "primary") {
       if (selectedPrimary === value) {
         setSelectedPrimary(null)
+        setPrimaryDescription("");
       } else {
         setSelectedPrimary(value)
+        setPrimaryDescription(selectedTech.description)
       }
     }
     if (type === "secondary") {
       if (selectedSecondary === value) {
         setSelectedSecondary(null)
+        setSecondaryDescription("");
       } else {
         setSelectedSecondary(value)
+        setSecondaryDescription(selectedTech.description)
+
       }
     }
   }
@@ -35,7 +56,8 @@ export const Experience = () => {
         </div>
         {selectedPrimary && (
           <div>
-            {selectedPrimary}
+            <span>{selectedPrimary}</span>
+            <span>{primaryDescription}</span>
           </div>
         )}
       </section>
@@ -50,7 +72,8 @@ export const Experience = () => {
         </div>
         {selectedSecondary && (
           <div>
-            {selectedSecondary}
+            <span>{selectedSecondary}</span>
+            <span>{secondaryDescription}</span>
           </div>
         )}
       </section>
