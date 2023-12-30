@@ -4,10 +4,12 @@ import './Navbar.css'
 
 export const Navbar = () => (
   <nav className="navbar">
-    <div className="navbar-logo">
-      <img className="navbar-img" src="/hexagon.svg" />
-      <span className="navbar-img-letter highlighted">M</span>
-    </div>
+    <Link to="/" style={{ height: "100px" }}>
+      <div className="navbar-logo">
+        <img className="navbar-img" src="/hexagon.svg" />
+        <span className="navbar-img-letter highlighted">M</span>
+      </div>
+    </Link>
     <div className="app-navigation">
       <Link to="/about"><button className="navigation-button"><span className="highlighted">01.</span> About</button></Link>
       <Link to="/experience"><button className="navigation-button"><span className="highlighted">02.</span> Experience</button></Link>
