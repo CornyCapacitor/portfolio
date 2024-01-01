@@ -46,7 +46,7 @@ export const Experience = () => {
   return (
     <div className="experience">
       <section>
-        <h1 className="highlighted">Main technologies</h1>
+        <h1 className="highlighted">Tech</h1>
         <div className="languages">
           <img src="html-icon.svg" id="HTML" className={selectedPrimary === "HTML" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "primary")} />
           <img src="css-icon.svg" id="CSS" className={selectedPrimary === "CSS" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "primary")} />
@@ -62,7 +62,7 @@ export const Experience = () => {
         )}
       </section>
       <section>
-        <h1 className="highlighted">Worth to mention</h1>
+        <h1 className="highlighted">Side skills</h1>
         <div className="additional-skills">
           <img src="git-icon.svg" id="Git" className={selectedSecondary === "Git" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
           <img src="github-icon.svg" id="Github" className={selectedSecondary === "Github" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
