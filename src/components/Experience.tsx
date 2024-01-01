@@ -78,7 +78,7 @@ export const Experience = () => {
       <section>
         <h1 className="highlighted">Commercial experience</h1>
         <div className="commercial-experience">
-          <span>While never being employed as a software developer, I've put my interest into many community-based activities, such as advent of code or was lurking through many open repositories to gain information about how big guys do their code. I've been learning magics of typescript for almost a year during my free time, and react for almost a half. Almost all of my knowledge comes from books and benevolence of the internet.</span>
+          <span>While never being employed as a software developer, I've put my interest into many community-based activities, such as advent of code or was lurking through many open repositories to gain information about how big guys do their code. I've been learning magics of TypeScript for almost a year during my free time, and React for almost a half. Almost all of my knowledge comes from books and benevolence of the internet.</span>
         </div>
       </section>
     </div>
