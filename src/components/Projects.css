@@ -1,0 +1,10 @@
+.projects {
+  font-family: Poppins, Roboto, Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 100px;
+  width: 100%;
+}
