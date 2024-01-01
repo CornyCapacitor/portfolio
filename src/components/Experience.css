@@ -1,0 +1,69 @@
+.experience {
+  font-family: Poppins, Roboto, Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 100px;
+  width: 100%;
+  gap: 50px;
+}
+
+.experience section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience section h1 {
+  font-size: 30px;
+}
+
+.experience section div {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.experience section div img {
+  height: 80px;
+  width: 80px;
+  filter: grayscale(100%);
+  transition: 0.5s;
+
+  &:hover {
+    filter: grayscale(0%);
+    cursor: pointer;
+  }
+
+  &.selected {
+    filter: grayscale(0%);
+  }
+}
+
+.description-container {
+  width: 400px;
+  box-shadow: 0px 0px 5px 1px white;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 20px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 2s;
+}
+
+.commercial-experience {
+  width: 50%;
+  text-align: center;
+}
+
+.highlighted {
+  font-family: Poppins, Roboto, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: var(--primary)
+}
