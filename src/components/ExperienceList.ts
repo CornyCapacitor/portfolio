@@ -1,34 +1,34 @@
 export const ExperienceList = [
   {
     name: "HTML",
-    description: "Although being aware that HTML isn't certainly a programming language, I want to mention that I'm also aware of proper writing html structure and signing certain elements, so it's suitable for different devices such as text-readers.",
+    description: "I possess proficient skills in HTML, emphasizing my expertise in crafting well-structured and semantically meaningful markup. My knowledge extends beyond the basic syntax, encompassing the intricacies of creating accessible content. I adhere to best practices in HTML coding, ensuring compatibility with various devices, including text readers, thereby enhancing the overall user experience.",
   },
   {
     name: "CSS",
-    description: "I like to set my css clean, at least I think it is clean most of the time. I know how to create basic animations, how to manage same things using different properties and (I think so) have knowledge about few css tools such as styled components, scss, sass or tailwind."
+    description: "I have a solid understanding of CSS, ensuring my stylesheets are clean and well-organized. I can create basic animations and efficiently manage styles using different properties. Additionally, I'm familiar with CSS tools like styled-components, SCSS, SASS, and Tailwind, which I often use to enhance my development workflow."
   },
   {
     name: "JavaScript",
-    description: "I feel very comfortable writing JavaScript code. Never put much effort in learning other languages, but I must admit that JavaScript seems logical for me for most of the time. Surely I must be missing many useful techniques, but I'm willingful to learn those as fast as possible, to be even more efficient."
+    description: "I'm proficient in JavaScript, feeling confident in my ability to write clean and logical code. While I haven't extensively explored other languages, I find JavaScript's logic intuitive. I acknowledge there might be additional techniques I can learn, and I'm eager to acquire them quickly to enhance my efficiency as a developer."
   },
   {
     name: "TypeScript",
-    description: "When starting to write JavaScript, it felt pretty satisfying due to it's easily learnable basics. When adviced to touch TypeScript, my perception of the code I write has changed. I started to notice many benefits of static typing, although I must admit, that sometimes TypeScript can get under my skin."
+    description: "I initially found satisfaction in the easily graspable basics of JavaScript. However, upon delving into TypeScript, my perspective on coding underwent a significant shift. I've come to appreciate the numerous advantages of static typing, even though I acknowledge that TypeScript can be challenging at times. Despite occasional frustrations, I recognize the overall value it adds to the robustness of the code."
   },
   {
     name: "React",
-    description: "React is my first framework to which I have devoted most of my time. I am familiar with basic Hooks, custom Hooks and the nature of refreshing and working React code. I feel very comfortable in it and I would certainly like to continue writing commercial code in this framework."
+    description: "React holds a special place as my first and primary framework, where I've invested a significant amount of time. Proficient in utilizing basic and custom Hooks, I have a deep understanding of React's refreshing nature and its mechanics. My comfort level with React is high, and I am enthusiastic about continuing to write commercial code within this framework."
   },
   {
     name: "Git",
-    description: "I'm familiar with the very basics of Git. I know how to prepare the code for pushes, know (At least I think so) how to write concise commit messages, how to manage branching and much more of these basic functionalities git provides."
+    description: "I have a solid grasp of the fundamental aspects of Git. I am adept at preparing code for pushes, and I prioritize writing concise and informative commit messages. My proficiency extends to managing branches and leveraging other essential functionalities that Git offers for efficient version control."
   },
   {
     name: "Github",
-    description: "I did some github training to be prepared for participating in code reviewing, proper tracking of code version and similar functions. Know how to read it and participate without causing incomprehensible changes."
+    description: "I have undergone GitHub training to equip myself for tasks such as code reviewing and proficiently tracking code versions. I am adept at navigating GitHub, ensuring I can read and participate in projects without introducing incomprehensible changes. My familiarity with GitHub contributes to effective collaboration and version control practices."
   },
   {
     name: "AI",
-    description: "I'm aware of the artificial intelligence existence and its rapid development over the last few years. I keep up to date with its development and the possibilities of using it during programming. I know that the solutions offered by the free variants are still full of bugs, but I am familiar with how to use their benefits to make tasks easier."
+    description: "I stay informed about the rapid advancements in artificial intelligence over recent years. Keeping up to date with its development, I recognize the potential applications of AI in programming. While acknowledging that free variants may have some limitations, I am adept at leveraging their benefits to simplify tasks and enhance efficiency in my work"
   },
 ]
