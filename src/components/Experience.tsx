@@ -46,7 +46,7 @@ export const Experience = () => {
   return (
     <div className="experience">
       <section>
-        <h1>Main technologies</h1>
+        <h1 className="highlighted">Main technologies</h1>
         <div className="languages">
           <img src="html-icon.svg" id="HTML" className={selectedPrimary === "html" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "primary")} />
           <img src="css-icon.svg" id="CSS" className={selectedPrimary === "css" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "primary")} />
@@ -62,7 +62,7 @@ export const Experience = () => {
         )}
       </section>
       <section>
-        <h1>Worth to mention</h1>
+        <h1 className="highlighted">Worth to mention</h1>
         <div className="additional-skills">
           <img src="git-icon.svg" id="Git" className={selectedSecondary === "git" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
           <img src="github-icon.svg" id="Github" className={selectedSecondary === "github" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
@@ -76,7 +76,7 @@ export const Experience = () => {
         )}
       </section>
       <section>
-        <h1>Commercial experience</h1>
+        <h1 className="highlighted">Commercial experience</h1>
         <div className="commercial-experience">
           <span>While never being employed as a software developer, I've put my interest into many community-based activities, such as advent of code or was lurking through many open repositories to gain information about how big guys do their code. I've been learning magics of typescript for almost a year during my free time, and react for almost a half. Almost all of my knowledge comes from books and benevolence of the internet.</span>
         </div>
