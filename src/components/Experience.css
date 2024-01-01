@@ -42,3 +42,28 @@
     filter: grayscale(0%);
   }
 }
+
+.description-container {
+  width: 400px;
+  box-shadow: 0px 0px 5px 1px white;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 20px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 2s;
+}
+
+.commercial-experience {
+  width: 50%;
+  text-align: center;
+}
+
+.highlighted {
+  font-family: Poppins, Roboto, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: var(--primary)
+}
