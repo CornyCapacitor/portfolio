@@ -1,31 +1,17 @@
 import { useState } from 'react'
 
 import './Projects.css'
+import { ProjectsData } from './ProjectsData'
 
 type Project = {
   name: string,
-  revealed: boolean
+  revealed: boolean,
+  description: string,
+  url: string,
 }
 
 export const Projects = () => {
-  const [projectList, setProjectList] = useState<Project[]>([
-    {
-      name: "taskingo",
-      revealed: false,
-    },
-    {
-      name: "tibia_helper",
-      revealed: false,
-    },
-    {
-      name: "cysia_candles",
-      revealed: false,
-    },
-    {
-      name: "cookie_clicker_clone",
-      revealed: false,
-    },
-  ])
+  const [projectList, setProjectList] = useState<Project[]>(ProjectsData)
 
   const toggleRevealed = (project_name: string) => {
     setProjectList((p) =>
@@ -35,40 +21,38 @@ export const Projects = () => {
     );
   }
 
+  const formatName = (name: string) => {
+    const words = name.split('_');
+
+    const formattedName = words.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+
+    return formattedName;
+  }
+
   return (
     <div className="projects">
-      <div className={`project-container ${projectList[0].revealed ? 'revealed' : ''}`}>
-        <h1 id="taskingo" onClick={(e) => toggleRevealed((e.target as HTMLImageElement).id)}>Taskingo</h1>
-        {projectList[0].revealed && (
-          <div>
-            <span>{projectList[0].name}</span>
-          </div>
-        )}
-      </div>
-      <div className={`project-container ${projectList[1].revealed ? 'revealed' : ''}`}>
-        <h1 id="tibia_helper" onClick={(e) => toggleRevealed((e.target as HTMLImageElement).id)}>Tibia helper</h1>
-        {projectList[1].revealed && (
-          <div>
-            <span>{projectList[1].name}</span>
-          </div>
-        )}
-      </div>
-      <div className={`project-container ${projectList[2].revealed ? 'revealed' : ''}`}>
-        <h1 id="cysia_candles" onClick={(e) => toggleRevealed((e.target as HTMLImageElement).id)}>Cysia candles</h1>
-        {projectList[2].revealed && (
-          <div>
-            <span>{projectList[2].name}</span>
-          </div>
-        )}
-      </div>
-      <div className={`project-container ${projectList[3].revealed ? 'revealed' : ''}`}>
-        <h1 id="cookie_clicker_clone" onClick={(e) => toggleRevealed((e.target as HTMLImageElement).id)}>Cookie Clicker clone</h1>
-        {projectList[3].revealed && (
-          <div>
-            <span>{projectList[3].name}</span>
-          </div>
-        )}
-      </div>
+      {projectList.map((project, index) => (
+        <div className={`project-container ${projectList[index].revealed ? 'revealed' : ''}`}>
+          <h1 id={project.name} onClick={(e) => toggleRevealed((e.target as HTMLImageElement).id)}>{formatName(project.name)}</h1>
+          {projectList[index].revealed && (
+            <div>
+              <div className="project-info">
+                <div className="project-left-section">
+                  <span className="project-description reveal">{project.description}</span>
+                </div>
+                <div className="project-right-section">
+                  <a href={project.url} target="_blank">
+                    <img src={`${project.name}.png`} className="project-image reveal" />
+                  </a>
+                  <a href={project.url} target="_blank">
+                    <button className="project-button reveal">Visit project's website</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      ))}
     </div>
   )
 }

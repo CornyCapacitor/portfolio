@@ -57,7 +57,7 @@ export const Experience = () => {
         {selectedPrimary && (
           <div className="description-container">
             <span className="highlighted">{selectedPrimary}</span>
-            <span>{primaryDescription}</span>
+            <span className="revealing">{primaryDescription}</span>
           </div>
         )}
       </section>
@@ -71,7 +71,7 @@ export const Experience = () => {
         {selectedSecondary && (
           <div className="description-container">
             <span className="highlighted">{selectedSecondary}</span>
-            <span>{secondaryDescription}</span>
+            <span className="revealing">{secondaryDescription}</span>
           </div>
         )}
       </section>
