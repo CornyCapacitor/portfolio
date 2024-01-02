@@ -68,6 +68,23 @@
   }
 }
 
+.revealing {
+  opacity: 0;
+  animation: forwards revealing 2s;
+}
+
+@keyframes revealing {
+
+  0%,
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .commercial-experience {
   width: 50%;
   text-align: center;
