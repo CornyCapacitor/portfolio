@@ -47,7 +47,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 45%;
+  width: 1%;
   animation: forwards revealing 3s;
 }
 
@@ -86,9 +86,11 @@
   0%,
   50% {
     opacity: 0;
+    width: 45%;
   }
 
   100% {
     opacity: 1;
+    width: 45%;
   }
 }
