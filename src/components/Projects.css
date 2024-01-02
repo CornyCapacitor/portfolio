@@ -48,7 +48,7 @@
   align-items: center;
   justify-content: center;
   width: 1%;
-  animation: forwards revealing 3s;
+  animation: forwards project-revealing 3s;
 }
 
 .project-description {}
@@ -81,7 +81,7 @@
   }
 }
 
-@keyframes revealing {
+@keyframes project-revealing {
 
   0%,
   50% {
