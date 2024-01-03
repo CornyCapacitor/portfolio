@@ -1,0 +1,31 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  width: 100%;
+  gap: 40px;
+  box-sizing: border-box;
+  padding-top: 200px;
+}
+
+.contact-sources {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.contact-icon {
+  background-color: white;
+  width: 150px;
+  border-radius: 75px;
+  box-shadow: 0px 0px 5px 2px white;
+  transition: 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(90%);
+    scale: 1.2;
+  }
+}
