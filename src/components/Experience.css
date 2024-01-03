@@ -71,6 +71,7 @@
 .revealing {
   opacity: 0;
   animation: forwards revealing 2s;
+  text-align: justify;
 }
 
 @keyframes revealing {
