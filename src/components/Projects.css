@@ -51,7 +51,9 @@
   animation: forwards project-revealing 3s;
 }
 
-.project-description {}
+.project-description {
+  text-align: justify;
+}
 
 .project-right-section {
   flex-direction: column;
