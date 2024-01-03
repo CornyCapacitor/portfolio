@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ExperienceList } from './ExperienceList';
+import { ExperienceData } from './ExperienceData';
 
 import './Experience.css';
 
@@ -11,7 +11,7 @@ type Experience = {
 export const Experience = () => {
   const [selectedPrimary, setSelectedPrimary] = useState<string | null>(null)
   const [selectedSecondary, setSelectedSecondary] = useState<string | null>(null)
-  const [experienceList] = useState<Experience[]>(ExperienceList)
+  const [experienceList] = useState<Experience[]>(ExperienceData)
   const [primaryDescription, setPrimaryDescription] = useState<string>("");
   const [secondaryDescription, setSecondaryDescription] = useState<string>("");
 
