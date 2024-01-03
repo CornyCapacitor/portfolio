@@ -1,4 +1,4 @@
-export const ExperienceList = [
+export const ExperienceData = [
   {
     name: "HTML",
     description: "I possess proficient skills in HTML, emphasizing my expertise in crafting well-structured and semantically meaningful markup. My knowledge extends beyond the basic syntax, encompassing the intricacies of creating accessible content. I adhere to best practices in HTML coding, ensuring compatibility with various devices, including text readers, thereby enhancing the overall user experience.",

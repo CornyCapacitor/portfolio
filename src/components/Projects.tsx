@@ -44,6 +44,7 @@ export const Projects = () => {
                   <a href={project.url} target="_blank">
                     <img src={`${project.name}.png`} className="project-image reveal" />
                   </a>
+                  <span>{project.url}</span>
                   <a href={project.url} target="_blank">
                     <button className="project-button reveal">Visit project's website</button>
                   </a>
