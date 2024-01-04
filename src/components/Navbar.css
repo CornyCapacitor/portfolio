@@ -9,7 +9,7 @@
   justify-content: space-between;
   font-family: Poppins, Roboto, Arial, Helvetica, sans-serif;
 
-  @media (max-width: 425px) {
+  @media (max-width: 785px) {
     flex-direction: column;
     height: auto;
   }
@@ -51,7 +51,7 @@
   gap: 20px;
   height: 100%;
 
-  @media (max-width: 425px) {
+  @media (max-width: 1000px) {
     flex-wrap: wrap;
   }
 }
