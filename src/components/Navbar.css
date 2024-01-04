@@ -8,6 +8,11 @@
   align-self: flex-start;
   justify-content: space-between;
   font-family: Poppins, Roboto, Arial, Helvetica, sans-serif;
+
+  @media (max-width: 425px) {
+    flex-direction: column;
+    height: auto;
+  }
 }
 
 .navbar-logo {
@@ -27,9 +32,10 @@
 
 .navbar-img-letter {
   position: relative;
-  right: 50%;
+  right: 64%;
   font-size: 30px;
   z-index: -1;
+  width: 0;
 }
 
 .highlighted {
@@ -44,6 +50,10 @@
   justify-content: center;
   gap: 20px;
   height: 100%;
+
+  @media (max-width: 425px) {
+    flex-wrap: wrap;
+  }
 }
 
 .navigation-button {
