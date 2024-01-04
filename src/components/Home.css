@@ -8,17 +8,32 @@
   padding: 100px 200px 100px 300px;
   width: 100vw;
   flex: 1;
+
+  @media (max-width: 425px) {
+    padding: 50px;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 h1 {
   font-size: 70px;
   margin: 0;
+
+  @media (max-width: 425px) {
+    font-size: 50px;
+  }
 }
 
 h2 {
   font-size: 70px;
   margin: 0;
   opacity: 0.6;
+
+  @media (max-width: 425px) {
+    font-size: 50px;
+  }
 }
 
 .greet {
@@ -53,14 +68,22 @@ h2 {
   }
 }
 
+.typewriter-container {
+  @media (max-width: 425px) {
+    height: 225px;
+  }
+
+  @media (max-width: 375px) {
+    height: 300px;
+  }
+}
+
 .typewriter {
+  padding-left: 5px;
   border-right: 7px var(--primary) solid;
-  padding-right: 5px;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  margin: 25px 0px;
+  color: var(--primary);
   animation: typewriting step-end infinite 1s;
+  opacity: 1;
 }
 
 @keyframes typewriting {
