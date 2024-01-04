@@ -8,12 +8,41 @@
   gap: 40px;
   box-sizing: border-box;
   padding-top: 200px;
+  flex-wrap: wrap;
+
+  @media (max-width: 1024px) {
+    padding-top: 150px;
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 100px;
+  }
+
+  @media (max-width: 425px) {
+    padding-top: 50px;
+  }
+}
+
+.contact h1 {
+  @media (max-width: 1024px) {
+    font-size: 50px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 30px;
+  }
 }
 
 .contact-sources {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   gap: 50px;
+  flex-wrap: wrap;
 }
 
 .contact-icon {
@@ -27,5 +56,17 @@
   &:hover {
     filter: brightness(90%);
     scale: 1.2;
+  }
+
+  @media (max-width: 1024px) {
+    width: 130px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 110px;
+  }
+
+  @media (max-width: 425px) {
+    max-width: 100px;
   }
 }
