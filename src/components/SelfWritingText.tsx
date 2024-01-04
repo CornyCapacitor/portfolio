@@ -53,5 +53,5 @@ export const SelfWritingText = () => {
     return () => clearInterval(interval);
   }, [isAdding, index, pace, sentence]);
 
-  return <div>{text}</div>;
+  return <>{text}</>;
 };
