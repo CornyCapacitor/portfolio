@@ -8,6 +8,14 @@
   padding: 100px;
   width: 100%;
   gap: 50px;
+
+  @media (max-width: 550px) {
+    padding: 100px 50px;
+  }
+
+  @media (max-width: 440px) {
+    padding: 50px 20px;
+  }
 }
 
 .experience section {
@@ -23,8 +31,13 @@
 
 .experience section div {
   display: flex;
+  justify-content: center;
   gap: 20px;
   padding: 20px;
+
+  @media (max-width: 550px) {
+    flex-wrap: wrap;
+  }
 }
 
 .experience section div img {
@@ -56,6 +69,10 @@
   justify-content: center;
   opacity: 0;
   animation: reveal 2s forwards;
+
+  @media (max-width: 440px) {
+    width: 100%;
+  }
 }
 
 @keyframes reveal {
@@ -88,11 +105,16 @@
 
 .commercial-experience {
   width: 50%;
-  text-align: center;
+  text-align: justify;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
 }
 
 .highlighted {
   font-family: Poppins, Roboto, Arial, Helvetica, sans-serif;
   font-weight: 500;
-  color: var(--primary)
+  color: var(--primary);
+  text-align: center;
 }
