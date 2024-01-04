@@ -24,6 +24,10 @@ h1 {
   @media (max-width: 425px) {
     font-size: 50px;
   }
+
+  @media (max-width: 375px) {
+    font-size: 35px;
+  }
 }
 
 h2 {
@@ -34,10 +38,22 @@ h2 {
   @media (max-width: 425px) {
     font-size: 50px;
   }
+
+  @media (max-width: 375px) {
+    font-size: 35px;
+  }
 }
 
 .greet {
   word-spacing: 3px;
+
+  @media (max-width: 425px) {
+    font-size: smaller;
+  }
+
+  @media (max-width: 375px) {
+    font-size: small;
+  }
 }
 
 .description {
@@ -66,15 +82,24 @@ h2 {
     cursor: pointer;
     box-shadow: 0px 0px 5px 2px var(--primary);
   }
+
+  @media (max-width: 425px) {}
+
+  @media (max-width: 375px) {
+    font-size: smaller;
+    padding: 15px 30px;
+
+  }
 }
 
 .typewriter-container {
   @media (max-width: 425px) {
-    height: 225px;
+    margin-top: 75px;
+    height: 300px;
   }
 
   @media (max-width: 375px) {
-    height: 300px;
+    height: 225px;
   }
 }
 

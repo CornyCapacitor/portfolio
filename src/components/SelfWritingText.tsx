@@ -42,7 +42,8 @@ export const SelfWritingText = () => {
 
     const interval = setInterval(() => {
       if (isAdding) {
-        setPace(250);
+        // setPace(250);
+        setPace(10)
         addLetter();
       } else if (!isAdding) {
         setPace(50);
