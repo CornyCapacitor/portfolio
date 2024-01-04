@@ -14,7 +14,7 @@ export const Contact = () => {
         <a href="https://www.facebook.com/ElHombreFenomeno/">
           <img src="facebook-icon.svg" className="contact-icon" />
         </a>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+        <a href="mateusz-minder.cv.pdf" download="mateusz-minder-cv.pdf">
           <img src="cv-file-icon.svg" className="contact-icon" />
         </a>
       </div>
