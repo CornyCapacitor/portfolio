@@ -25,7 +25,6 @@ export const SelfWritingText = () => {
       } else {
         setText((prevText) => prevText + sentence[index]);
         setIndex((p) => p + 1);
-        console.log("Adding index:" + index)
       }
     }
 
@@ -36,7 +35,6 @@ export const SelfWritingText = () => {
       } else {
         setText((prevText) => prevText.slice(0, -1));
         setIndex((p) => p - 1)
-        console.log("Removing index:" + index)
       }
     };
 
