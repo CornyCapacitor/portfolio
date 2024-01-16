@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { ReactNode, useState } from 'react';
 import { ExperienceData } from './ExperienceData';
 
 import './Experience.css';
 
 type Experience = {
   name: string,
+  icon: string,
   description: string,
 }
 
@@ -38,22 +39,31 @@ export const Experience = () => {
       } else {
         setSelectedSecondary(value)
         setSecondaryDescription(selectedTech.description)
-
       }
     }
+  }
+
+  const renderSkills = (skills: Experience[], selected: string | null, type: string): ReactNode => {
+    return (
+      <div className="skills-container">
+        {skills.map((skill) => (
+          <img
+            key={skill.name}
+            src={skill.icon}
+            id={skill.name}
+            className={selected === skill.name ? "selected" : ""}
+            onClick={() => selectHandler(skill.name, type)}
+          />
+        ))}
+      </div>
+    )
   }
 
   return (
     <div className="experience">
       <section>
         <h1 className="highlighted">Tech</h1>
-        <div>
-          <img src="html-icon.svg" id="HTML" className={selectedPrimary === "HTML" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "primary")} />
-          <img src="css-icon.svg" id="CSS" className={selectedPrimary === "CSS" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "primary")} />
-          <img src="js-icon.svg" id="JavaScript" className={selectedPrimary === "JavaScript" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "primary")} />
-          <img src="ts-icon.svg" id="TypeScript" className={selectedPrimary === "TypeScript" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "primary")} />
-          <img src="react-icon.svg" id="React" className={selectedPrimary === "React" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "primary")} />
-        </div>
+        {renderSkills(experienceList.slice(0, 5), selectedPrimary, "primary")}
         {selectedPrimary && (
           <div className="description-container">
             <span className="highlighted">{selectedPrimary}</span>
@@ -63,23 +73,7 @@ export const Experience = () => {
       </section>
       <section>
         <h1 className="highlighted">Side skills</h1>
-        <div className="skills-container">
-          <img src="git-icon.svg" id="Git" className={selectedSecondary === "Git" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
-          <img src="github-icon.svg" id="Github" className={selectedSecondary === "Github" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
-          <img src="ai-icon.svg" id="AI" className={selectedSecondary === "AI" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
-          <img src="redux-icon.svg" id="Redux" className={selectedSecondary === "Redux" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
-          <img src="zustand-icon.png" id="Zustand" className={selectedSecondary === "Zustand" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
-          <img src="jotai-icon.png" id="Jotai" className={selectedSecondary === "Jotai" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
-          <img src="axios-icon.png" id="Axios" className={selectedSecondary === "Axios" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
-          <img src="tailwind-icon.svg" id="Tailwind" className={selectedSecondary === "Tailwind" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
-          <img src="styled-components-icon.png" id="Styled Components" className={selectedSecondary === "Styled Components" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
-          <img src="vite-icon.svg" id="Vite" className={selectedSecondary === "Vite" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
-          <img src="slack-icon.svg" id="Slack" className={selectedSecondary === "Slack" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
-          <img src="jira-icon.svg" id="Jira" className={selectedSecondary === "Jira" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
-          <img src="figma-icon.svg" id="Figma" className={selectedSecondary === "Figma" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
-          <img src="trello-icon.svg" id="Trello" className={selectedSecondary === "Trello" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
-          <img src="lodash-icon.svg" id="Lodash" className={selectedSecondary === "Lodash" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
-        </div>
+        {renderSkills(experienceList.slice(5), selectedSecondary, "secondary")}
         {selectedSecondary && (
           <div className="description-container">
             <span className="highlighted">{selectedSecondary}</span>
