@@ -31,4 +31,56 @@ export const ExperienceData = [
     name: "AI",
     description: "I stay informed about the rapid advancements in artificial intelligence over recent years. Keeping up to date with its development, I recognize the potential applications of AI in programming. While acknowledging that free variants may have some limitations, I am adept at leveraging their benefits to simplify tasks and enhance efficiency in my work"
   },
+  {
+    name: "Redux",
+    description: "Redux"
+  },
+  {
+    name: "Zustand",
+    description: "Zustand"
+  },
+  {
+    name: "Jotai",
+    description: "Jotai"
+  },
+  {
+    name: "React Query",
+    description: "React Query"
+  },
+  {
+    name: "Axios",
+    description: "Axios"
+  },
+  {
+    name: "Talwind",
+    description: "Tailwind"
+  },
+  {
+    name: "Styled Components",
+    description: "Styled Components"
+  },
+  {
+    name: "Vite",
+    description: "Vite"
+  },
+  {
+    name: "Slack",
+    description: "Slack"
+  },
+  {
+    name: "Jira",
+    description: "Jira"
+  },
+  {
+    name: "Figma",
+    description: "Figma"
+  },
+  {
+    name: "Trello",
+    description: "Trello"
+  },
+  {
+    name: "Lodash",
+    description: "Lodash"
+  },
 ]

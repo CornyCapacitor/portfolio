@@ -63,10 +63,22 @@ export const Experience = () => {
       </section>
       <section>
         <h1 className="highlighted">Side skills</h1>
-        <div>
+        <div className="skills-container">
           <img src="git-icon.svg" id="Git" className={selectedSecondary === "Git" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
           <img src="github-icon.svg" id="Github" className={selectedSecondary === "Github" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
           <img src="ai-icon.svg" id="AI" className={selectedSecondary === "AI" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
+          <img src="redux-icon.svg" id="Redux" className={selectedSecondary === "Redux" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
+          <img src="zustand-icon.png" id="Zustand" className={selectedSecondary === "Zustand" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
+          <img src="jotai-icon.png" id="Jotai" className={selectedSecondary === "Jotai" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
+          <img src="axios-icon.png" id="Axios" className={selectedSecondary === "Axios" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
+          <img src="tailwind-icon.svg" id="Tailwind" className={selectedSecondary === "Tailwind" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
+          <img src="styled-components-icon.png" id="Styled Components" className={selectedSecondary === "Styled Components" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
+          <img src="vite-icon.svg" id="Vite" className={selectedSecondary === "Vite" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
+          <img src="slack-icon.svg" id="Slack" className={selectedSecondary === "Slack" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
+          <img src="jira-icon.svg" id="Jira" className={selectedSecondary === "Jira" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
+          <img src="figma-icon.svg" id="Figma" className={selectedSecondary === "Figma" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
+          <img src="trello-icon.svg" id="Trello" className={selectedSecondary === "Trello" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
+          <img src="lodash-icon.svg" id="Lodash" className={selectedSecondary === "Lodash" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
         </div>
         {selectedSecondary && (
           <div className="description-container">
