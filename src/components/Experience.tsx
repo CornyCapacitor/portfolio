@@ -63,7 +63,7 @@ export const Experience = () => {
     <div className="experience">
       <section>
         <h1 className="highlighted">Tech</h1>
-        {renderSkills(experienceList.slice(0, 5), selectedPrimary, "primary")}
+        {renderSkills(experienceList.slice(0, 6), selectedPrimary, "primary")}
         {selectedPrimary && (
           <div className="description-container">
             <span className="highlighted">{selectedPrimary}</span>
@@ -73,7 +73,7 @@ export const Experience = () => {
       </section>
       <section>
         <h1 className="highlighted">Side skills</h1>
-        {renderSkills(experienceList.slice(5), selectedSecondary, "secondary")}
+        {renderSkills(experienceList.slice(6), selectedSecondary, "secondary")}
         {selectedSecondary && (
           <div className="description-container">
             <span className="highlighted">{selectedSecondary}</span>

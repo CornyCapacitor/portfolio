@@ -25,6 +25,11 @@ export const ExperienceData = [
     description: "React holds a special place as my first and primary framework, where I've invested a significant amount of time. Proficient in utilizing basic and custom Hooks, I have a deep understanding of React's refreshing nature and its mechanics. My comfort level with React is high, and I am enthusiastic about continuing to write commercial code within this framework."
   },
   {
+    name: "Next.js",
+    icon: "nextjs-icon.svg",
+    description: "I have a solid understanding how next.js do it's job. I've made a couple of projects using this framework and feel comfortable coding in. I really admit how all the base functionality it provides, making coding easier due to less requirement of using libraries, in opposite of React, for example routing."
+  },
+  {
     name: "Git",
     icon: "git-icon.svg",
     description: "I have a solid grasp of the fundamental aspects of Git. I am adept at preparing code for pushes, and I prioritize writing concise and informative commit messages. My proficiency extends to managing branches and leveraging other essential functionalities that Git offers for efficient version control."
