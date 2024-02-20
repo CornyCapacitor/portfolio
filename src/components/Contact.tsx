@@ -5,7 +5,7 @@ export const Contact = () => {
     <div className="contact">
       <h1>Contact me via:</h1>
       <div className="contact-sources">
-        <a href="https://github.com/HornyCapacitor">
+        <a href="https://github.com/CornyCapacitor">
           <img style={{ backgroundColor: "transparent" }} src="github-icon.svg" className="contact-icon" />
         </a>
         <a href="https://www.linkedin.com/in/mateusz-minder-b19303257/">
