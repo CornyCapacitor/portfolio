@@ -44,9 +44,7 @@ export const Contact = () => {
         <a href="https://www.linkedin.com/in/mateusz-minder-b19303257/" target="_blank">
           <img src="linkedin-icon.svg" className="contact-icon" />
         </a>
-        {/* <a href="mateusz-minder-cv.pdf" download="mateusz-minder-cv.pdf"> */}
         <img src="cv-file-icon.svg" className="contact-icon" onClick={() => handleCvClick()} />
-        {/* </a> */}
       </div>
     </div>
   )

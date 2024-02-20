@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { ReactNode, useState } from 'react';
 import { ExperienceData } from './ExperienceData';
 
 import './Experience.css';
 
 type Experience = {
   name: string,
+  icon: string,
   description: string,
 }
 
@@ -38,22 +39,31 @@ export const Experience = () => {
       } else {
         setSelectedSecondary(value)
         setSecondaryDescription(selectedTech.description)
-
       }
     }
+  }
+
+  const renderSkills = (skills: Experience[], selected: string | null, type: string): ReactNode => {
+    return (
+      <div className="skills-container">
+        {skills.map((skill) => (
+          <img
+            key={skill.name}
+            src={skill.icon}
+            id={skill.name}
+            className={selected === skill.name ? "selected" : ""}
+            onClick={() => selectHandler(skill.name, type)}
+          />
+        ))}
+      </div>
+    )
   }
 
   return (
     <div className="experience">
       <section>
         <h1 className="highlighted">Tech</h1>
-        <div className="languages">
-          <img src="html-icon.svg" id="HTML" className={selectedPrimary === "HTML" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "primary")} />
-          <img src="css-icon.svg" id="CSS" className={selectedPrimary === "CSS" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "primary")} />
-          <img src="js-icon.svg" id="JavaScript" className={selectedPrimary === "JavaScript" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "primary")} />
-          <img src="ts-icon.svg" id="TypeScript" className={selectedPrimary === "TypeScript" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "primary")} />
-          <img src="react-icon.svg" id="React" className={selectedPrimary === "React" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "primary")} />
-        </div>
+        {renderSkills(experienceList.slice(0, 6), selectedPrimary, "primary")}
         {selectedPrimary && (
           <div className="description-container">
             <span className="highlighted">{selectedPrimary}</span>
@@ -63,11 +73,7 @@ export const Experience = () => {
       </section>
       <section>
         <h1 className="highlighted">Side skills</h1>
-        <div className="additional-skills">
-          <img src="git-icon.svg" id="Git" className={selectedSecondary === "Git" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
-          <img src="github-icon.svg" id="Github" className={selectedSecondary === "Github" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
-          <img src="ai-icon.svg" id="AI" className={selectedSecondary === "AI" ? "selected" : ""} onClick={(e) => selectHandler((e.target as HTMLImageElement).id, "secondary")} />
-        </div>
+        {renderSkills(experienceList.slice(6), selectedSecondary, "secondary")}
         {selectedSecondary && (
           <div className="description-container">
             <span className="highlighted">{selectedSecondary}</span>
@@ -78,7 +84,7 @@ export const Experience = () => {
       <section>
         <h1 className="highlighted">Commercial experience</h1>
         <div className="commercial-experience">
-          <span>While never being employed as a software developer, I've put my interest into many community-based activities, such as advent of code or was lurking through many open repositories to gain information about how big guys do their code. I've been learning magics of TypeScript for almost a year during my free time, and React for almost a half. Almost all of my knowledge comes from books and benevolence of the internet.</span>
+          While never being employed as a software developer, I've put my interest into many community-based activities, such as advent of code or was lurking through many open repositories to gain information about how big guys do their code. I've been learning magics of TypeScript for almost a year during my free time, and React for almost a half. Almost all of my knowledge comes from books and benevolence of the internet.
         </div>
       </section>
     </div>
