@@ -109,4 +109,9 @@ export const ExperienceData = [
     icon: "lodash-icon.svg",
     description: "I'm aware of Lodash utilities and I'm eager to use it if required in my future projects."
   },
+  {
+    name: "Testing",
+    icon: "testing-icon.svg",
+    description: "I know how to utilize testing libraries such as React Testing Library or Jest, to make sure the code works as intended. I'm familiar with basic DOM testing knowledge, know how to write unit tests for functions and how to mock user interaction with the page using user events."
+  }
 ]
