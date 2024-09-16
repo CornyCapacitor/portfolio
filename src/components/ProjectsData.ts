@@ -17,7 +17,7 @@ export const ProjectsData = [
     name: "cysia_candles",
     revealed: false,
     description: 'Cysia Candles marks my initial foray into the realm of an "online store." Creating an e-commerce platform for candles based on products occasionally sold to friends by my partner I have introduced many new features, such as a language changer and theme switcher. Ultimately, I am fully satisfied with the achieved result. In practice, the entire application is built on the resemblance to an average online store. However, in Cysia Candles, users, for better or worse, cannot make online payments for the ordered products. It serves more as a showcase to test whether I can independently create a mini online store. Worth to mention; the app saves the cart and the other information through local storage, is fully responsive on mobile devices and is developed using React TS.',
-    url: "https://cysia-candles.vercel.app/"
+    url: "https://cysia-candles-delta.vercel.app/"
   },
   {
     name: "cookie_clicker_clone",
