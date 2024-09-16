@@ -5,6 +5,7 @@ import { ProjectsData } from './ProjectsData'
 
 type Project = {
   name: string,
+  image: string,
   revealed: boolean,
   description: string,
   url: string,
@@ -21,19 +22,11 @@ export const Projects = () => {
     );
   }
 
-  const formatName = (name: string) => {
-    const words = name.split('_');
-
-    const formattedName = words.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
-
-    return formattedName;
-  }
-
   return (
     <div className="projects">
       {projectList.map((project, index) => (
         <div className={`project-container ${projectList[index].revealed ? 'revealed' : ''}`}>
-          <h1 id={project.name} onClick={(e) => toggleRevealed((e.target as HTMLImageElement).id)}>{formatName(project.name)}</h1>
+          <h1 id={project.name} onClick={(e) => toggleRevealed((e.target as HTMLImageElement).id)}>{project.name}</h1>
           {projectList[index].revealed && (
             <div>
               <div className="project-info">
@@ -42,7 +35,7 @@ export const Projects = () => {
                 </div>
                 <div className="project-right-section">
                   <a href={project.url} target="_blank">
-                    <img src={`${project.name}.png`} className="project-image reveal" />
+                    <img src={project.image} className="project-image reveal" />
                   </a>
                   <span>{project.url}</span>
                   <a href={project.url} target="_blank">
