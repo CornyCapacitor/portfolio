@@ -1,5 +1,5 @@
 import { ReactNode, useState } from 'react';
-import { ExperienceData } from './ExperienceData';
+import { SideSkillsExperience, TechExperience } from './ExperienceData';
 
 import './Experience.css';
 
@@ -12,11 +12,13 @@ type Experience = {
 export const Experience = () => {
   const [selectedPrimary, setSelectedPrimary] = useState<string | null>(null)
   const [selectedSecondary, setSelectedSecondary] = useState<string | null>(null)
-  const [experienceList] = useState<Experience[]>(ExperienceData)
+  const [techExperienceList] = useState<Experience[]>(TechExperience)
+  const [sideSkillsExperienceList] = useState<Experience[]>(SideSkillsExperience)
   const [primaryDescription, setPrimaryDescription] = useState<string>("");
   const [secondaryDescription, setSecondaryDescription] = useState<string>("");
 
   const selectHandler = (value: string, type: string) => {
+    const experienceList = techExperienceList.concat(sideSkillsExperienceList)
     const selectedTech = experienceList.find((tech) => tech.name === value);
 
     if (!selectedTech) {
@@ -63,7 +65,7 @@ export const Experience = () => {
     <div className="experience">
       <section>
         <h1 className="highlighted">Tech</h1>
-        {renderSkills(experienceList.slice(0, 6), selectedPrimary, "primary")}
+        {renderSkills(techExperienceList, selectedPrimary, "primary")}
         {selectedPrimary && (
           <div className="description-container">
             <span className="highlighted">{selectedPrimary}</span>
@@ -73,7 +75,7 @@ export const Experience = () => {
       </section>
       <section>
         <h1 className="highlighted">Side skills</h1>
-        {renderSkills(experienceList.slice(6), selectedSecondary, "secondary")}
+        {renderSkills(sideSkillsExperienceList, selectedSecondary, "secondary")}
         {selectedSecondary && (
           <div className="description-container">
             <span className="highlighted">{selectedSecondary}</span>

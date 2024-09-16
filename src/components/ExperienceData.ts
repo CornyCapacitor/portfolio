@@ -1,4 +1,4 @@
-export const ExperienceData = [
+export const TechExperience = [
   {
     name: "HTML",
     icon: "html-icon.svg",
@@ -30,6 +30,19 @@ export const ExperienceData = [
     description: "I have a solid understanding how next.js do it's job. I've made a couple of projects using this framework and feel comfortable coding in. I really admit how all the base functionality it provides, making coding easier due to less requirement of using libraries, in opposite of React, for example routing."
   },
   {
+    name: "Node",
+    icon: "node-icon.svg",
+    description: "I initially enjoyed JavaScript on the client side, but exploring Node.js transformed how I approached backend development. Its non-blocking, event-driven architecture opened up new possibilities for building scalable applications, even though managing asynchronous code can be tricky at times."
+  },
+  {
+    name: "Express.js",
+    icon: "expressjs-icon.svg",
+    description: "At first, setting up a server felt complex, but using Express simplified the process significantly. Its minimalistic framework makes routing and handling requests straightforward, understandable, super readable and I actually feel very eager using this technology for all my backend servers if necessary."
+  }
+]
+
+export const SideSkillsExperience = [
+  {
     name: "Git",
     icon: "git-icon.svg",
     description: "I have a solid grasp of the fundamental aspects of Git. I am adept at preparing code for pushes, and I prioritize writing concise and informative commit messages. My proficiency extends to managing branches and leveraging other essential functionalities that Git offers for efficient version control."
@@ -42,7 +55,22 @@ export const ExperienceData = [
   {
     name: "AI",
     icon: "ai-icon.svg",
-    description: "I stay informed about the rapid advancements in artificial intelligence over recent years. Keeping up to date with its development, I recognize the potential applications of AI in programming. While acknowledging that free variants may have some limitations, I am adept at leveraging their benefits to simplify tasks and enhance efficiency in my work"
+    description: "I stay informed about the rapid advancements in artificial intelligence over recent years. Keeping up to date with its development, I recognize the potential applications of AI in programming. While acknowledging that free variants may have some limitations, I am adept at leveraging their benefits to simplify tasks and enhance efficiency in my work."
+  },
+  {
+    name: "Supabase",
+    icon: "supabase-icon.svg",
+    description: "Using supabase was my first touch with setting up my first cloud databases, and I must admit that Supabase's documentation is really handy, easy to read, so I can easily setup some small table databases, use their authentication system or even attach some storage for photos for my projects."
+  },
+  {
+    name: "SQL",
+    icon: "sql-icon.svg",
+    description: "SQL was my very first touch of building databases from scratch. I find it very straightforward to start, but hard to master. While setting up a database and manage its intestines seems straight and understandable, setting up a SQL database locally for like a company server might get a little tricky."
+  },
+  {
+    name: "Mongo",
+    icon: "mongo-icon.svg",
+    description: "While working with relational databases was familiar, transitioning to MongoDB reshaped my approach to data. Its flexible schema and document-oriented nature offer great versatility, though adapting to this structure requires a different mindset compared to traditional SQL databases."
   },
   {
     name: "Redux",
@@ -78,6 +106,11 @@ export const ExperienceData = [
     name: "Styled Components",
     icon: "styled-components-icon.png",
     description: "Styled Components library seems to be the best solution for me to write pretty clean jsx. I know how to use it properly, know how to pass props inside styled components css file and I'm eager to use it with ease everywhere I feel it'd do great for the cleanliness."
+  },
+  {
+    name: "Shadcn",
+    icon: "shadcn-icon.svg",
+    description: "The simplicity of using and adding new components of shadcn made all my training projects look solid and clean in just a few minutes of using shadcn components. I really appreciate theme possibilities shadcn offers, like the way some components are simplified and feel strong using these inside my projects."
   },
   {
     name: "Vite",
