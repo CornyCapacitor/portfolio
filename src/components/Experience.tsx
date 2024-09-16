@@ -86,7 +86,7 @@ export const Experience = () => {
       <section>
         <h1 className="highlighted">Commercial experience</h1>
         <div className="commercial-experience">
-          While never being employed as a software developer, I've put my interest into many community-based activities, such as advent of code or was lurking through many open repositories to gain information about how big guys do their code. I've been learning magics of TypeScript for almost a year during my free time, and React for almost a half. Almost all of my knowledge comes from books and benevolence of the internet.
+          Although I have never been formally employed as a software developer in a traditional company, my curiosity has led me to explore many community-driven projects and open-source repositories to see how the professionals approach coding. For almost two years now, I've been deepening my understanding of TypeScript in my free time, while honing my skills in React for nearly a year and a half. Most of my knowledge has come from books, peers, and the vast resources generously shared on the internet. I have also completed two freelance projects, which gave me hands-on experience working directly with clients. These projects not only sharpened my coding abilities but also pushed me into the role of a UI designer. I had to plan, design, and build the websites entirely on my own, which my clients continue to use today. This experience strengthened my ability to manage both the technical and design aspects of web development.
         </div>
       </section>
     </div>
