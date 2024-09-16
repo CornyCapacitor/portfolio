@@ -33,5 +33,12 @@ export const ProjectsData = [
     revealed: false,
     description: "ThreadNest is my first project that integrates a separately built Next.js frontend hosted on Vercel with an Express.js backend utilizing Mongoose and MongoDB for database management. The project was created to test my skills in full-stack development, and I found myself thoroughly enjoying the challenge of handling both sides of the application when necessary. I began by developing the backend, but the real challenge emerged when I started working on the frontend. I quickly realized how many adjustments were required on the backend to meet the needs of the frontend. Despite these challenges, the process was immensely enjoyable. There are still areas for improvement, but I was keen to implement my own authentication system using JWT tokens. On the frontend, I employed Shadcn for most of the CSS, and I rigorously tested the backend in a local environment using Postman for manual testing and Chai/Supertest for automated tests. I am proud of this accomplishment and excited to tackle even more complex projects in the future.",
     url: "https://threadnest.vercel.app/"
+  },
+  {
+    name: "Sps Iskra",
+    image: "spsiskra.PNG",
+    revealed: false,
+    description: "SPS Iskra is my first full-scale freelance project, utilizing a combination of Next.js and Supabase for data storage and graphics used by the company. In this project, I participated both as a developer and as a designer, working with the client from scratch to design and style the website to meet their needs. It wasn't an easy task, but the client was satisfied, and I learned a lot from the experience. Unfortunately, the project had to be completed in a very short timeframe, which left room for some minor noticable imperfections. Despite this, I am pleased with the outcome of the collaboration. Importantly, the client was provided with an administrative panel that allows for adding new users with optional roles, creating and modifying content on the site, and managing the flow of information. Worth to mention; the app is fully responsive on mobile devices and is developed using Next.js.",
+    url: "https://spsiskra.pl/"
   }
 ]
